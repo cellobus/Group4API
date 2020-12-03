@@ -24,6 +24,49 @@ public class APIController {
         }
         return null;
     }
+
+    @DeleteMapping("/shop/{id}")
+    public String  deleteProduct(@PathVariable int id)   {
+        for(Product p :  productRepository.products)   {
+            if (p.getId() == id)  {
+                productRepository.products.remove(p);
+                return "Deleted";
+            }
+        }
+        return "Not found";
+    }
+
+    @PostMapping("/shop") // create
+    public Product createProduct(@RequestBody Product product)   {
+        product.setCreatedAt("");
+        product.setDiscountInPercentage(0.0);
+        productRepository.addProduct(product);
+        return  product;
+    }
+
+    @PutMapping("/shop/{id}")
+    public Product updateProduct(@PathVariable int id, @RequestBody Product product)   {
+        Product aProduct = productRepository.updateProduct(product, id);// getProduct(product.getId());
+        aProduct = product;
+       // productRepository.products.add(aProduct);
+        return aProduct;//(Book)bookRepository.getBook(aBook);
+    }
+
+
+/*
+
+    @PutMapping(value="/book/{bookId}")
+    public Book updateBook(@PathVariable long bookId, @RequestBody Book book)   {
+        Book aBook = bookRepository.getBook(book.getId());
+        aBook = book;
+        return aBook;//(Book)bookRepository.getBook(aBook);
+    }
+    @PostMapping("/book")
+    public Book create(@RequestBody Book book) {
+        return bookRepository.addBook(book);
+    }
+
+ */
 }
 
 
