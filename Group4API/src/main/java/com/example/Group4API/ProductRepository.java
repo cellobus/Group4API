@@ -36,9 +36,9 @@ public class ProductRepository {
     }
 
     public Product addProduct(Product product)  {
-       int nextID=0;
+       int nextID=1;
         for(var p : products)   {
-            nextID = p.getId() > nextID? p.getId()+1: nextID;
+            nextID = nextID <= p.getId() ? p.getId()+1: nextID;
             }
         product.setId(nextID);
         products.add(product);
