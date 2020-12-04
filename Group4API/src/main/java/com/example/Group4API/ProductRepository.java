@@ -27,20 +27,26 @@ public class ProductRepository {
 
     public Product updateProduct(Product product, int id)  {
         for(var p : products)   {
-            if (p.getId() == id) {
+            if (p.getId() == id) {// ID och created at
+                int savedid = p.getId();
+                String savedCreatedAt = p.getCreatedAt();
                 p = product;
-                return product;
+                p.setCreatedAt(savedCreatedAt);
+                p.setId(savedid);
+                return p;
             }
         }
         return null;
     }
 
     public Product addProduct(Product product)  {
-       int nextID=1;
-        for(var p : products)   {
-            nextID = nextID <= p.getId() ? p.getId()+1: nextID;
+       int nextID=0;
+        for (var p : products)   {
+            if (nextID <=  p.getId())
+                nextID =  p.getId()+1;
             }
         product.setId(nextID);
+        product.setCreatedAt("");
         products.add(product);
         return product;
     }
