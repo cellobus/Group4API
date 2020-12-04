@@ -41,7 +41,7 @@ public class Group4ApiApplicationTests {
 				.andExpect(MockMvcResultMatchers.content().string(containsString("T-Shirt")));
 	}
 	@Test
-	public void testPosProduct() throws Exception {
+	public void testPostProduct() throws Exception {
 		mvc.perform(
 				MockMvcRequestBuilders.post("/shop")
 						.content(mapper.writeValueAsString(new Product(100, "Jacka", 1, "Outdoor", "Winter jacket", 440, 0, "", "")))
@@ -49,13 +49,6 @@ public class Group4ApiApplicationTests {
 		)
 				.andExpect(status().is2xxSuccessful())
 				.andExpect(MockMvcResultMatchers.content().string(containsString("Jacka")));
-
-
-		mvc.perform(
-				MockMvcRequestBuilders.get("/book")
-		)
-				.andExpect(status().is2xxSuccessful())
-				.andExpect(MockMvcResultMatchers.content().string(containsString("New Book")));
 	}
 
 }
