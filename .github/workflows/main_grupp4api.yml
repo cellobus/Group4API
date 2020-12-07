@@ -21,7 +21,7 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn clean install
+      run: mvn -B clean install --file Group4API/pom.xml
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -29,4 +29,4 @@ jobs:
         app-name: 'grupp4api'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_b9156bfb96534988a02360f6a34575e7 }}
-        package: '${{ github.workspace }}/target/*.jar'
+        package: '${{ github.workspace }}/Group4API/target/*.jar'
