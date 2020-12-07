@@ -12,7 +12,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import static org.hamcrest.CoreMatchers.not;
+
 import static org.hamcrest.Matchers.containsString;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -44,7 +44,7 @@ public class Group4ApiApplicationTests {
 	public void testPostProduct() throws Exception {
 		mvc.perform(
 				MockMvcRequestBuilders.post("/shop")
-						.content(mapper.writeValueAsString(new Product(100, "Jacka", 1, "Outdoor", "Winter jacket", 440, 0, "", "")))
+						.content(mapper.writeValueAsString(new Product("100", "Jacka", 1, "Outdoor", "Winter jacket", 440, 0, "", "")))
 						.contentType(MediaType.APPLICATION_JSON_UTF8)
 		)
 				.andExpect(status().is2xxSuccessful())

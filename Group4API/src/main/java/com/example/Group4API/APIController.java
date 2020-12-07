@@ -17,7 +17,7 @@ public class APIController {
     }
 
     @GetMapping("/shop/{id}") // HTTP status - Return code 404 Not found...
-    public Product getproduct(@PathVariable int id) {
+    public Product getproduct(@PathVariable String id) {
         for (Product p : productRepository.products) {
             if (p.getId() == id) {
                 return p;
@@ -27,7 +27,7 @@ public class APIController {
     }
 
     @DeleteMapping("/shop/{id}")   // HTTP status - Return code 404 Not found...
-    public String deleteProduct(@PathVariable int id) {
+    public String deleteProduct(@PathVariable String id) {
         for (Product p : productRepository.products) {
             if (p.getId() == id) {
                 productRepository.products.remove(p);
@@ -48,7 +48,7 @@ public class APIController {
     }
 
     @PutMapping("/shop/{id}") // HTTP status - Return code 200 - OK
-    public Product updateProduct(@PathVariable int id, @RequestBody Product product) {
+    public Product updateProduct(@PathVariable String id, @RequestBody Product product) {
         Product aProduct = productRepository.updateProduct(product, id);// getProduct(product.getId());
         aProduct = product;
         // productRepository.products.add(aProduct);

@@ -1,7 +1,7 @@
 package com.example.Group4API;
 
 public class Product {
-    protected int id;
+    protected String id; // Refactor to string...
     protected String productName;
     protected int stock;
     protected String category;
@@ -11,7 +11,7 @@ public class Product {
     protected String productImage;
     protected String createdAt;
 
-    public Product(int id, String productName, int stock, String category, String description, double price, double discountInPercentage, String productImage, String createdAt) {
+    public Product(String id, String productName, int stock, String category, String description, double price, double discountInPercentage, String productImage, String createdAt) {
         this.id = id;
         this.productName = productName;
         this.stock = stock;
@@ -23,11 +23,11 @@ public class Product {
         this.createdAt = createdAt;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
