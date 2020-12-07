@@ -25,10 +25,6 @@
     <list default="true" id="d4ae5fb8-3777-4339-aee4-e0c33053270d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Group4API/APIController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Group4API/APIController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Group4API/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Group4API/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Group4API/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Group4API/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/Group4API/Group4ApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/example/Group4API/Group4ApiApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +83,7 @@
       <recent name="com.example.Group4API" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Group4API">
+  <component name="RunManager" selected="Application.Group4ApiApplication">
     <configuration name="Group4ApiApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.Group4API.Group4ApiApplication" />
       <module name="Group4API" />
@@ -186,8 +182,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in Group4API" />
         <item itemvalue="Application.Group4ApiApplication" />
+        <item itemvalue="JUnit.All in Group4API" />
         <item itemvalue="JUnit.Group4ApiApplicationTests.testPosProduct" />
         <item itemvalue="JUnit.Group4ApiApplicationTests" />
       </list>
@@ -237,26 +233,26 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1139" y="363" key="FileChooserDialogImpl/0.0.2560.1440@0.0.2560.1440" timestamp="1607084699430" />
-    <state width="2017" height="268" key="GridCell.Tab.0.bottom" timestamp="1607338465430">
+    <state width="1183" height="268" key="GridCell.Tab.0.bottom" timestamp="1607342995516">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1741" height="237" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1607071265719" />
-    <state width="2017" height="268" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1607338465430" />
-    <state width="2017" height="268" key="GridCell.Tab.0.center" timestamp="1607338465430">
+    <state width="1183" height="268" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1607342995516" />
+    <state width="1183" height="268" key="GridCell.Tab.0.center" timestamp="1607342995515">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1741" height="237" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1607071265718" />
-    <state width="2017" height="268" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1607338465430" />
-    <state width="2017" height="268" key="GridCell.Tab.0.left" timestamp="1607338465430">
+    <state width="1183" height="268" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1607342995515" />
+    <state width="1183" height="268" key="GridCell.Tab.0.left" timestamp="1607342995515">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1741" height="237" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1607071265718" />
-    <state width="2017" height="268" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1607338465430" />
-    <state width="2017" height="268" key="GridCell.Tab.0.right" timestamp="1607338465430">
+    <state width="1183" height="268" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1607342995515" />
+    <state width="1183" height="268" key="GridCell.Tab.0.right" timestamp="1607342995515">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1741" height="237" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1607071265719" />
-    <state width="2017" height="268" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1607338465430" />
+    <state width="1183" height="268" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1607342995515" />
     <state x="1171" y="289" key="SettingsEditor" timestamp="1607086157340">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
