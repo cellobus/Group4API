@@ -15,6 +15,7 @@ public class ProductRepository {
         products.add(new Product(4, "T-Shirt", 100, "Top", "Nice T-shirt, Green", 99.0, 0.0, "", ""));
         products.add(new Product(5, "T-Shirt", 100, "Top", "Nice T-shirt, Red", 99.0, 0.0, "", ""));
         products.add(new Product(6, "T-Shirt", 100, "Top", "Nice T-shirt, Gray", 99.0, 0.0, "", ""));
+        products.add(new Product(7, "Sock", 2000, "Top", "Nice T-shirt, Gray", 99.0, 0.0, "", ""));
     }
 
     public Product getProduct(int id)   {
