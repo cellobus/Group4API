@@ -21,8 +21,8 @@ jobs:
         java-version: '11'
 
     - name: Build with Maven
-      run: mvn -B clean install --file Group4API/pom.xml
-
+    run: mvn -B clean install --file pom.xml
+      
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
